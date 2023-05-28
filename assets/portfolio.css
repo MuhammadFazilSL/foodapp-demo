@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+
+    
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   
+    padding: 10px 50px;
+    background-color: black;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 700;
+    color: #29f700 !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+   border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+
+.active{
+    border-bottom: 2px solid #29f700 !important;
+}
+#navbarSupportedContent .btn{
+background-color: #29f700;
+border-radius: 10px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1199.98px) { 
+    #navbar{
+    padding: 10px 50px;
+    }
+}
+
+/**home**/
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(./bg.jfif.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#home h1{
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    text-shadow: 0px 1px 0px #ccc;
+    text-shadow: 0px 2px 0px #ccc;
+    text-shadow: 0px 3px 0px #ccc;
+    text-shadow: 0px 4px 0px #ccc;
+    text-shadow: 0px 5px 0px #ccc;
+    text-shadow: 0px 6px 0px #ccc;
+}
+#home p{
+    font-size: 20px;
+    color: white;
+    padding: 50px;
+}
+#home .input-group{
+    width: 70%;
+    height: 45px;
+  
+}
+#home input{
+    border-radius: 5px !important;
+}
+#home .signin{
+    background-color: #29f700;
+    color: white;
+    height: 35px !important;
+    margin-left: 10px;
+}
+@media screen and (max-width:575px) {
+    #home h1{
+        color: white;
+        letter-spacing: 3px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        text-shadow: 0px 1px 0px #ccc;
+        text-shadow: 0px 2px 0px #ccc;
+        text-shadow: 0px 3px 0px #ccc;
+    }
+    
+    input{
+        width: auto !important;
+        margin-bottom: 10px !important;
+       
+    }
+}
+@media (max-width: 1199.98px) { 
+    #home p{
+        padding: 50px;
+    }
+}
+/**ABOUT SECTION**/
+#about{
+    background: linear-gradient(to right,#29f700, #29f791 100%);
+    min-height: min-content;
+}
+#about h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+#about p{
+    font-size: 20px;
+}
+@media screen and (max-width:575px){
+    #about h1{
+        font-weight: 600;
+        font-size: 44px;
+    }
+    #about p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+/***products**/
+#product{
+    background-color:  #e5e5e5;;
+}
+#product h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+#product img{
+    height: 200px;
+    width: 200px;
+}
+#product .card{
+    width: 300px;
+    height: 350px;
+    background-color: #e5e5e5 !important;
+    border: none;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.3),
+                inset 5px 4px 8px white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px ;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+#product .card:hover{
+    box-shadow: inset 5px 4px 10px rgba(0,0,0,.3),
+                inset  -5px -5px 10px white;
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 1199.98px) { 
+    #product .card{
+        width: 270px;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 770px) {
+    #product .card{
+        width: 230px;
+        height: auto;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:575px){
+    #product .card{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/***contacts**/
+
+#contact img{
+    height: 100%;
+    border-radius: 10px;
+}
+#contact{
+   min-height: 80vh;
+}
+#contact h1{
+    margin: 15px 0;
+}
+.box{
+    width: 100%;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#contact input{
+    margin: 10px 0;
+}
+#contact textarea{
+    margin: 10px 0;
+}
+@media screen and (max-width:575px){
+    #contact{
+        margin-bottom: 10px;
+    }
+    #contact img{
+        margin: 10px 0;
+
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    color: white;
+    height: 45px;
+    align-items: center;
+}
