@@ -1,5 +1,19 @@
-let a=10;
-console.log(a)
+
+//const navToggler = document.querySelector   (".navbar-nav");
+
+//navToggler.addEventListener("click",() =>{
+ //   const listMenu = document.querySelector(".navbarhidden")
+  //  alert("fazil");
+    //    listMenu.classList.toggle("hidden");
+//});
+
+
+
+
+
+
+
+
 
 function menuActive() {
     const sections = document.querySelectorAll("section");
@@ -26,5 +40,7 @@ function menuActive() {
 
     });
 }
+
+
 menuActive();
 

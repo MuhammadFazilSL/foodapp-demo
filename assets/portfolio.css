@@ -38,6 +38,9 @@
 background-color: #29f700;
 border-radius: 10px;
 }
+.navbarhidden{
+    width: 80vw;
+}
 section{
     width: 100%;
     min-height: 100vh;
@@ -116,7 +119,7 @@ section{
 /**ABOUT SECTION**/
 #about{
     background: linear-gradient(to right,#29f700, #29f791 100%);
-    min-height: min-content;
+    height: 1000px;
 }
 #about h1{
     font-weight: 700;
@@ -130,6 +133,7 @@ section{
     #about h1{
         font-weight: 600;
         font-size: 44px;
+       
     }
     #about p{
         font-size: 16px;
